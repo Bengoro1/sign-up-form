@@ -14,45 +14,56 @@
       </div>
     </div>
     <div class="right">
+      <div class="text">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up<em> now </em>to get started.</p>
+        <p>You<em> know </em>you want to.</p>
+      </div>
       <form action="" method="get">
-        <h2>Let's do this!</h2>
-        <fieldset>
-          <legend>Gender</legend>
-          <label for="male">
-            Male
-            <input type="radio" name="gender" id="male">
-          </label>
-          <label for="female">
-            Female
-            <input type="radio" name="gender" id="female">
-          </label>
-        </fieldset>
-        <label for="f-name">
-          First name
-          <input type="text" name="f-name" id="f-name">
-        </label>
-        <label for="l-name">
-          Last name
-          <input type="text" name="l-name" id="l-name">
-        </label>
-        <label for="mail">
-          Email
-          <input type="email" name="mail" id="mail">
-        </label>
-        <label for="p-num">
-          Phone number
-          <input type="tel" name="p-num" id="p-num">
-        </label>
-        <label for="pwd">
-          Password
-          <input type="password" name="pwd" id="pwd">
-        </label>
-        <label for="con-pwd">
-          Confirm password
-          <input type="password" name="con-pwd" id="con-pwd">
-        </label>
+        <div class="form-white">
+          <h2>Let's do this!</h2>
+          <div class="radio">
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="male">
+                Male
+                <input type="radio" name="gender" id="male" checked>
+              </label>
+              <label for="female">
+                Female
+                <input type="radio" name="gender" id="female">
+              </label>
+            </fieldset>
+          </div>
+          <div class="input">
+            <label for="f-name" class="label">
+              First name
+              <input type="text" name="f-name" id="f-name" required>
+            </label>
+            <label for="l-name" class="label">
+              Last name
+              <input type="text" name="l-name" id="l-name" required>
+            </label>
+            <label for="mail" class="label">
+              Email
+              <input type="email" name="mail" id="mail" required>
+            </label>
+            <label for="p-num" class="label">
+              Phone number
+              <input type="tel" name="p-num" id="p-num" required>
+            </label>
+            <label for="pwd" class="label">
+              Password
+              <input type="password" name="pwd" id="pwd" required>
+            </label>
+            <label for="con-pwd" class="label">
+              Confirm password
+              <input type="password" name="con-pwd" id="con-pwd" required>
+            </label>
+          </div>
+        </div>
         <div class="button">
           <button type="submit">Sing up</button>
+          <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </form>
     </div>
