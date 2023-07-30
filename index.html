@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign up form</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -26,7 +27,7 @@
               <legend>Gender</legend>
               <label for="male">
                 Male
-                <input type="radio" name="gender" id="male" checked>
+                <input type="radio" name="gender" id="male">
               </label>
               <label for="female">
                 Female
@@ -35,29 +36,29 @@
             </fieldset>
           </div>
           <div class="input">
-            <label for="f-name" class="label">
+            <label for="fname" class="label">
               First name
-              <input type="text" name="f-name" id="f-name" required>
+              <input type="text" name="fname" id="fname" required>
             </label>
-            <label for="l-name" class="label">
+            <label for="lname" class="label">
               Last name
-              <input type="text" name="l-name" id="l-name" required>
+              <input type="text" name="lname" id="lname" required>
             </label>
             <label for="mail" class="label">
               Email
               <input type="email" name="mail" id="mail" required>
             </label>
-            <label for="p-num" class="label">
+            <label for="pnum" class="label">
               Phone number
-              <input type="tel" name="p-num" id="p-num" required>
+              <input type="tel" name="pnum" id="pnum" pattern="\+?[0-9]{10,12}" placeholder="(+)1234567890(12)" required>
             </label>
             <label for="pwd" class="label">
               Password
               <input type="password" name="pwd" id="pwd" required>
             </label>
-            <label for="con-pwd" class="label">
+            <label for="conpwd" class="label">
               Confirm password
-              <input type="password" name="con-pwd" id="con-pwd" required>
+              <input type="password" name="conpwd" id="conpwd" required>
             </label>
           </div>
         </div>
